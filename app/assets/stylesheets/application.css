@@ -15,5 +15,60 @@
  */
  
  .service-area, .feature-area {
-     background-color: white;
+   background-color: white;
  }
+ 
+ .white {
+   background-color: white;
+ }
+
+ul.hmenu {
+  list-style: none;	
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
+}
+
+/*flash*/
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+ 
+.section-alert {
+    height: 50px;
+}
+
+.field, .genric-btn {
+    margin: 10px 0 10px 0;
+}
+
+.title-form {
+    margin-bottom: 20px;
+}

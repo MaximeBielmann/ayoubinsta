@@ -13,4 +13,10 @@ class PagesController < ApplicationController
   
   def search
   end
+  
+  def admin
+  end
+  
+  def legals
+  end
 end
