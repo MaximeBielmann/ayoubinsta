@@ -59,7 +59,17 @@
             
             <h2 class="title-form">Mon abonnement</h2>
             
-            <p>STATUT : PREMIUM (ou gratuit)</p>
+            <p>STATUT : 
+              <% if current_user.premium_level == 0 %>
+              GRATUIT
+              <% elsif current_user.premium_level == 1 %>
+              ABONNEMENT NIVEAU 1
+              <% elsif current_user.premium_level == 2 %>
+              ABONNEMENT NIVEAU 2
+              <% else current_user.premium_level == 3 %>
+              ABONNEMENT NIVEAU 3
+              <% end %>
+            </p>
             
              <a href="#" class="genric-btn primary-border circle">Annuler l'abonnement</a>
             

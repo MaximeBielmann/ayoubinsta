@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "search" => "pages#search"
   get "admin" => "pages#admin"
   get "legals" => "pages#legals"
+  get "admin" => "pages#admin"
 end

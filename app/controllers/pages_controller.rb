@@ -11,12 +11,16 @@ class PagesController < ApplicationController
   def contact
   end
   
-  def search
-  end
-  
   def admin
   end
   
   def legals
+  end
+  
+  before_action :authenticate_user!
+  def search
+  end
+  
+  def admin
   end
 end

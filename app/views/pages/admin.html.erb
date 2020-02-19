@@ -1,15 +1,31 @@
-<div class="section-top-border white">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                
-            </div>
-            <div class="col-8">
-                <h1>Ajouter un compte</h1>
-                
-                
-                
+<% if current_user.admin %>
+
+    <div class="section-top-border white">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-8">
+                    <h1>Ajouter un compte</h1>
+                    
+                    
+                    
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+<% else %>
+
+    <div class="section-top-border white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Vous n'avez pas accès à cette page</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<% end%>
