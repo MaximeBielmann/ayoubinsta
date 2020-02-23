@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_19_123924) do
+ActiveRecord::Schema.define(version: 2020_02_22_174305) do
+
+  create_table "accounts", force: :cascade do |t|
+    t.string "account_name"
+    t.text "account_photo"
+    t.integer "account_followers"
+    t.integer "account_posts"
+    t.integer "account_likes"
+    t.integer "account_comments"
+    t.float "account_engagement"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

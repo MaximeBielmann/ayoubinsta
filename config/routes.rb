@@ -16,4 +16,9 @@ Rails.application.routes.draw do
   get "admin" => "pages#admin"
   get "legals" => "pages#legals"
   get "admin" => "pages#admin"
+  
+  post 'accounts' => 'accounts#create'
+  get 'accounts/:id' => 'accounts#show'
+  patch 'accounts/:id' => 'accounts#update'
+  delete 'accounts/:id' => 'accounts#destroy'
 end

@@ -1,4 +1,13 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, :except => [:home, :price, :faq, :contact, :legals]
+  
+  def search
+  end
+  
+  def admin
+  end
+  
+  
   def home
   end
   
@@ -11,16 +20,6 @@ class PagesController < ApplicationController
   def contact
   end
   
-  def admin
-  end
-  
   def legals
-  end
-  
-  before_action :authenticate_user!
-  def search
-  end
-  
-  def admin
   end
 end
