@@ -2360,6 +2360,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-price {
   background-color: #fff;
+  height: 720px;
 }
 
 .single-price .top-sec, .single-price .bottom-sec {
@@ -2398,6 +2399,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border-radius: 0;
   box-shadow: none;
+  position: absolute;
+  top: 85%;
+	left: 25%;
 }
 
 .single-price:hover {
